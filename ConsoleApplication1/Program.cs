@@ -23,11 +23,14 @@ namespace lab3
             Console.WriteLine(" Введите где расположить рисунок. Бип-бип!");
             Console.WriteLine(" Координата Х = ");
             p.x = int.Parse(Console.ReadLine());
+            p.SetX(p.x);
             Console.WriteLine(" Координата Y = ");
             p.y = int.Parse(Console.ReadLine());
+            p.SetY(p.y);
             Console.Clear();
             p.Draw();
-            Console.ReadKey();
+           
+                            Console.ReadKey();
         }
 
     }

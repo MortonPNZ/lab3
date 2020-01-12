@@ -18,14 +18,15 @@ namespace lab3
             if (x >= 0)
                 this.x = x;
             else
-                throw new Exception("Значение x не может быть отрицательным");
+                throw new Exception("Значение не может быть отрицательным");
+
         }
         public void SetY(int y)
         {
             if (y >= 0)
                 this.y = y;
             else
-                throw new Exception("Значение y не может быть отрицательным");
+                throw new Exception("Значение не может быть отрицательным");
         }
         public void SetSym(String ine1, String ine2, String ine3, String ine4)
         {
@@ -37,6 +38,7 @@ namespace lab3
         }
         public void Draw()
         {
+           
             Console.SetCursorPosition(x, y);
             Console.Write(line1);
             y = y + 1;
